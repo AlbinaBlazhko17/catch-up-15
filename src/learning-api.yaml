@@ -41,8 +41,7 @@ tags:
   - name: Other
     description: Other endpoints are described here.
 paths:
-  /:
-    get:
+  : get:
       tags:
         - Other
       operationId: GetRoot
