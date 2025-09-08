@@ -2,25 +2,42 @@ openapi: 3.1.0
 servers:
   - url: http://example.com
 info:
-  title: Learning API Demo
+  title: Learning API Demo1
   version: v1
   termsOfService: http://example.com/terms
-  description: This is a mock API. It is for demo and learning purposes. The server URL is powered by a Remockly mock server. You can send curl requests and use the try it console to interact with the mock API.
+  description:
+    This is a mock API. It is for demo and learning purposes. The server URL is powered by a Remockly mock server. You
+    can send curl requests and use the try it console to interact with the mock API.
 tags:
   - name: Activities
-    description: Endpoints related to learning activities, such as lessons, videos, and interactive exercises. Use these APIs to create, update, retrieve, and delete learning activities.
+    description:
+      Endpoints related to learning activities, such as lessons, videos, and interactive exercises. Use these APIs to
+      create, update, retrieve, and delete learning activities.
   - name: Quizzes
-    description: Endpoints for managing quizzes and quiz questions. These APIs enable you to create, update, retrieve, and delete quizzes, as well as manage questions and options within quizzes.
+    description:
+      Endpoints for managing quizzes and quiz questions. These APIs enable you to create, update, retrieve, and delete
+      quizzes, as well as manage questions and options within quizzes.
   - name: Badges
-    description: Endpoints for badge management, including creating, updating, retrieving, and deleting badges. Badges are awarded to learners based on their performance or progress in the learning system.
+    description:
+      Endpoints for badge management, including creating, updating, retrieving, and deleting badges. Badges are awarded
+      to learners based on their performance or progress in the learning system.
   - name: Scores
-    description: Endpoints for handling learner scores on quizzes, activities, and assignments. Use these APIs to submit, retrieve, update, and delete scores for individual learners or groups.
+    description:
+      Endpoints for handling learner scores on quizzes, activities, and assignments. Use these APIs to submit, retrieve,
+      update, and delete scores for individual learners or groups.
   - name: Checklists
-    description: Endpoints for managing checklists, which are lists of tasks or objectives learners must complete. These APIs enable you to create, update, retrieve, and delete checklists, as well as manage checklist items.
+    description:
+      Endpoints for managing checklists, which are lists of tasks or objectives learners must complete. These APIs
+      enable you to create, update, retrieve, and delete checklists, as well as manage checklist items.
   - name: Assignments
-    description: Endpoints related to assignments, including creating, updating, retrieving, and deleting assignments. Assignments may include projects, essays, or other tasks that learners are required to complete.
+    description:
+      Endpoints related to assignments, including creating, updating, retrieving, and deleting assignments. Assignments
+      may include projects, essays, or other tasks that learners are required to complete.
   - name: Reports
-    description: Endpoints for generating and retrieving reports on learner progress, activity completion, and overall performance. Use these APIs to access and analyze data on individual learners or groups, as well as export reports for further analysis.
+    description:
+      Endpoints for generating and retrieving reports on learner progress, activity completion, and overall performance.
+      Use these APIs to access and analyze data on individual learners or groups, as well as export reports for further
+      analysis.
   - name: Other
     description: Other endpoints are described here.
 paths:
@@ -316,11 +333,16 @@ components:
             properties:
               type:
                 type: string
-                description: URI reference [[RFC3986](https://tools.ietf.org/html/rfc3986)] that identifies the problem type. It should provide human-readable documentation for the problem type. When this member is not present, its value is assumed to be "about:blank".
+                description:
+                  URI reference [[RFC3986](https://tools.ietf.org/html/rfc3986)] that identifies the problem type. It
+                  should provide human-readable documentation for the problem type. When this member is not present, its
+                  value is assumed to be "about:blank".
                 format: uri
               title:
                 type: string
-                description: Short, human-readable summary of the problem type. It SHOULD NOT change from occurrence to occurrence of the problem, except for purposes of localization.
+                description:
+                  Short, human-readable summary of the problem type. It SHOULD NOT change from occurrence to occurrence
+                  of the problem, except for purposes of localization.
               status:
                 type: integer
                 description: HTTP status code.
@@ -331,7 +353,9 @@ components:
                 description: Human-readable explanation specific to this occurrence of the problem.
               instance:
                 type: string
-                description: URI reference that identifies the specific occurrence of the problem.  It may or may not yield further information if dereferenced.
+                description:
+                  URI reference that identifies the specific occurrence of the problem.  It may or may not yield further
+                  information if dereferenced.
   securitySchemes:
     imfKey:
       type: apiKey
