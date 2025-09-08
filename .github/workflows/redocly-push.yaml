@@ -20,6 +20,6 @@ jobs:
           organization: 'testing_redocly'
           project: 'phronesis-catch-up-albina-yaroslav'
           mountPath: 'api-hub'
-          files: 'src/**'
+          files: 'src/learning-api.yaml src/Guide.md'
         env:
           REDOCLY_AUTHORIZATION: ${{ secrets.REDOCLY_API_KEY }}
